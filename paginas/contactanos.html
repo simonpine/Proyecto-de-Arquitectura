@@ -1,0 +1,93 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Web de Arquitectos - Contact</title> 
+    <link rel="shortcut icon" href="../imagenes/logo.png">
+    <link rel="stylesheet" href="../Css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body class="contact">
+    <nav>
+        <ul>
+            <li>
+                <a href="#banner_contact" target="_self" class="link_nav hide">UP</a>
+            </li>
+            <li>
+                <a href="contactanos.html" id="contact" class="link_nav">CONTACT</a>
+            </li>
+            <li>
+                <a href="mapa.html" class="link_nav">MAPS</a>
+            </li>
+            <li>
+                <a href="agencia.html" class="link_nav">AGENCY</a>
+            </li>
+            <li>
+                <a href="proyectos.html" class="link_nav">PROJECTS</a>
+            </li>
+            <li>
+                <a href="../index.html" class="link_nav">HOME</a>
+            </li>
+        </ul>
+    </nav>
+    <header id="banner_contact" class="baner cien">
+        <div>
+            <img src="../imagenes/logo(contact).png" alt="logo(projects)" class="logos_secundarios">
+            <h1>contacto</h1>
+        </div>
+    </header>
+    <main id="main_contact" class="baner contenidos contenidos4 contenidos5">
+        <form id="conrtactar" class="gird_forms">
+            <input type="text" id="name" placeholder="Name*" required class="textos_contact">
+            <input type="email" id="email" placeholder="email*" required class="textos_contact">
+            <input type="text" id="number" placeholder="phone number" class="textos_contact">
+            <select id="city" placeholder="Selecciona" required="true" class="textos_contact">
+                    <option selected disabled>Select a city*</option>
+                    <option value="medellin" name="medellin">Medellin</option>
+                    <option value="bogota" name="medellin">Bogota</option>
+                    <option value="armenia" name="armenia">Armenia</option>
+                    <option value="cali" name="cali">Cali</option>
+                    <option value="barranquilla" name="barranquilla">Barranquilla</option>
+            </select>
+            <div id="company" class="textos_contact textos_contact1">
+                <div>
+                    <input type="radio" value="empresa" name="empresa o indivuduo" id="empresa">
+                    <label for="empresa">Company</label>
+                </div>
+                <div>
+                    <input type="radio" value="individuo" name="empresa o indivuduo" id="individuo">
+                    <label for="individuo">Person</label>
+                </div>
+            </div>
+            <textarea id="message" name="motivo" placeholder="Message*" required="true" class="textos_contact"></textarea>
+            <input id="send" type="submit" value="send" class="textos_contact conoce_mas">
+        </form>
+    </main>
+    <footer>
+        <section id="redes_sociales">
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="../imagenes/insta.png" alt="instagram">
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="../imagenes/facebook.png" alt="facebook">
+            </a>
+            <a href="https://twitter.com/" target="_blank">
+                <img src="../imagenes/twitter.png" alt="twitter">
+            </a>
+        </section>
+        <img src="../imagenes/logo-sin-fondo.png" alt="logo sin fondo" id="logoB">
+        <h2 id="copy">Copyright ©SimonP 2022</h2>
+        <section id="info_contacto">
+            <div>
+                <h3><img src="../imagenes/phone.png" alt="telefono">(+57) 123 324 420</h3>
+            </div>
+            <div>
+                <h3><img src="../imagenes/mail.png" alt="correo">BlaBlaBla@gmail.com</h3>
+            </div>
+        </section>
+    </footer>
+    <script>
+        AOS.init();
+     </script>
+</body>
+</html>
