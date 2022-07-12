@@ -197,6 +197,11 @@ nav ul li{
     color:#ff6666;
 }
 /* --------------------------Fonts--------------------------------------*/
+h2{
+    font-family: 'Alegreya Sans SC', sans-serif;
+    text-transform: lowercase;
+    font-weight: 300;
+}
 .titulos{
     font-family: 'Source Sans Pro', serif;
     font-size: 5rem;
@@ -447,61 +452,32 @@ h1{
 /*---------------------------------------footer---------------------------------*/
 footer{
     background-color: #1f1f1f;
-    position:relative;
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
     height: 90px;
-}
-footer h3, footer h2{
-    color: #ffffff;
-    font-family:  'Alegreya Sans SC', sans-serif;
-    font-weight: 300;
-}
-footer h3{
-    font-size: 2rem;
-}
-#redes_sociales a img{
-    width: auto;
-    height: 40px;
-    display: inline-block;
-    padding-left: 10px;
-    padding-right: 10px;
+    align-items: center;
+    justify-content: space-around;
 }
 #redes_sociales{
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    transform: translate(-50%,-50%);
+    display: flex;
+    width: 13%;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-#info_contacto h3 img{
-    width: auto;
-    height: 30px;
-    vertical-align:middle;
-}
-
-#info_contacto{
-    position: absolute;
-    top: 50%;
-    left: 80%;
-    transform: translate(-50%,-50%);
-}
-footer section{
-    display: inline-block;
-}
-#logoB{
-    width: auto;
-    height: 60%;
-    display: inline-block;
-    position:absolute;
-    left: 50%;
-    top: 40%;
-    transform: translate(-50%,-50%);
+footer img{
+    width: 60px;
+    height: 60px;
 }
 #copy{
-    position:absolute;
-    left: 50%;
-    top: 80%;
-    transform: translate(-50%,-50%);
-    text-transform: lowercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.iconos_footer2{
+    width: 30px;
+    height: 30px;
+    vertical-align:middle;
 }
 /*------------------------------------------Responsive 1270-----------------------------------*/
 @media screen and (max-width: 1270px){
