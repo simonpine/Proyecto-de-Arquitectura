@@ -23,15 +23,9 @@ img{
     }     
     25%{        
         background: linear-gradient(#ff6666, #ff6666);         
-        background-position: 0% 100%;         
+        background-position: 100% 100%;         
         background-repeat: no-repeat;         
         background-size: 100% 5px;     
-    }     
-    50%{         
-        background: linear-gradient(#ff6666, #ff6666);         
-        background-position: 0% 100%;         
-        background-repeat: no-repeat;         
-        background-size: 100% 100%;     
     }     
     75%{         
         background: linear-gradient(#ff6666, #ff6666);        
@@ -41,9 +35,9 @@ img{
     }
     100%{
         background: linear-gradient(#ff6666, #ff6666);        
-        background-position: 0% 100%;         
+        background-position: 100% 100%;         
         background-repeat: no-repeat;        
-       background-size: 0% 5px; 
+        background-size: 0px 5px; 
     } 
 } 
 h1{     
@@ -404,13 +398,12 @@ footer{
 }
 #redes_sociales{
     display: flex;
-    width: 13%;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 footer img{
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
+    margin: 0px 9px 0 9px;
 }
 #copy{
     display: flex;
@@ -503,7 +496,7 @@ footer img{
         height: 100%;
         width: 200px;
     }
-    /*------------------------------main-home(Responsive)-----------------------------*/
+/*------------------------------main-home(Responsive)-----------------------------*/
     .plano1, .plano2{
         width: 40%;
         height: auto;
