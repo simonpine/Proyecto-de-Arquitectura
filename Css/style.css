@@ -13,6 +13,44 @@ img{
     height: auto;
     width: 35%;
 }
+/* --------------------------animation(temporal)--------------------------------------*/
+@keyframes linea_titulos{     
+    0%{         
+        background: linear-gradient(#ff6666, #ff6666);         
+        background-position: 0% 100%;         
+        background-repeat: no-repeat;         
+        background-size: 0% 5px;     
+    }     
+    25%{        
+        background: linear-gradient(#ff6666, #ff6666);         
+        background-position: 0% 100%;         
+        background-repeat: no-repeat;         
+        background-size: 100% 5px;     
+    }     
+    50%{         
+        background: linear-gradient(#ff6666, #ff6666);         
+        background-position: 0% 100%;         
+        background-repeat: no-repeat;         
+        background-size: 100% 100%;     
+    }     
+    75%{         
+        background: linear-gradient(#ff6666, #ff6666);        
+         background-position: 0% 100%;         
+         background-repeat: no-repeat;        
+        background-size: 100% 5px;     
+    }
+    100%{
+        background: linear-gradient(#ff6666, #ff6666);        
+        background-position: 0% 100%;         
+        background-repeat: no-repeat;        
+       background-size: 0% 5px; 
+    } 
+} 
+h1{     
+    animation-name: linea_titulos;    
+    animation-duration: 7s;     
+    animation-iteration-count: infinite; 
+}
 /* --------------------------Banners(Fondos)--------------------------------------*/
 .baner{
     background-repeat:no-repeat;
@@ -178,7 +216,6 @@ h1{
     font-size: 5rem;
     padding: 5px;
     margin-top: 20px;
-    border-bottom: #ff6666 solid 4px;
     text-transform: uppercase;
 }
 /*------------------------------------------Marcas---------------------------------------*/
@@ -367,13 +404,13 @@ footer{
 }
 #redes_sociales{
     display: flex;
-    width: 8%;
+    width: 13%;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 footer img{
-    width: 44px;
-    height: 44px;
+    width: 60px;
+    height: 60px;
 }
 #copy{
     display: flex;
