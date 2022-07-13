@@ -13,100 +13,6 @@ img{
     height: auto;
     width: 35%;
 }
-/* ----------------------Layout-home(Grids)-----------------------*/
-.home{
-    display: grid;
-    grid-template-columns:100%;
-    grid-template-rows: 100% 300% auto 200vh 90px;
-    grid-template-areas: 
-    "header"
-    "ejemplos"
-    "marcas"
-    "main_home"
-    "footer";
-    background-color: #1f1f1f;
-}
-header{
-    grid-area: header;
-}
-#ejemplos{
-    display: flex;
-    flex-direction: column;
-    grid-area: ejemplos;
-}
-.marcas{
-    grid-area: marcas;
-}
-#main_home{
-    grid-area: main_home;
-}
-footer{
-    grid-area: footer;
-}
-/* ---------------------Layout-projects(Grids)------------------------*/
-.projects{
-    display: grid;
-    grid-template-columns:100%;
-    grid-template-rows: 100% auto 90px;
-    grid-template-areas: 
-    "header_projects"
-    "main_projects"
-    "footer";
-}
-#banner_projects{
-    grid-area: header_projects;
-}
-#main_projects{
-    grid-area: main_projects;
-}
-/* -----------------Layout-maps(Grids)----------------------------*/
-.agency{
-    display: grid;
-    grid-template-columns:100%;
-    grid-template-rows: 100% auto 90px;
-    grid-template-areas: 
-    "header_agency"
-    "main_agency"
-    "footer";
-}
-#banner_agency{
-    grid-area: header_agency;
-}
-#main_agency{
-    grid-area: main_agency;
-}
-/* --------------------Layout-maps(Grids)--------------------------*/
-.maps{
-    display: grid;
-    grid-template-columns:100%;
-    grid-template-rows: 100% auto 90px;
-    grid-template-areas: 
-    "header_maps"
-    "main_maps"
-    "footer";
-}
-#banner_maps{
-    grid-area: header_maps;
-}
-#main_maps{
-    grid-area: main_maps;
-}
-/* -----------------Layout-maps(Grids)--------------------------*/
-.contact{
-    display: grid;
-    grid-template-columns:100%;
-    grid-template-rows: 100% auto 90px;
-    grid-template-areas: 
-    "header_contact"
-    "main_contact"
-    "footer";
-}
-#banner_contact{
-    grid-area: header_contact;
-}
-#main_contact{
-    grid-area: main_contact;
-}
 /* --------------------------Banners(Fondos)--------------------------------------*/
 .baner{
     background-repeat:no-repeat;
@@ -561,9 +467,6 @@ footer img{
         width: 200px;
     }
     /*------------------------------main-home(Responsive)-----------------------------*/
-    .home{
-        grid-template-rows: 100% 300% auto auto auto;
-    }
     .plano1, .plano2{
         width: 40%;
         height: auto;
@@ -576,9 +479,6 @@ footer img{
         order: 2;
     }
 /*------------------------------main-projects(Responsive)-----------------------------*/
-        .projects{
-            grid-template-rows: 100% auto auto;
-        }
         .fotos2{
             margin-top: 70px;
             margin-bottom: 70px;
