@@ -13,7 +13,7 @@ img{
     height: auto;
     width: 35%;
 }
-/* --------------------------animation(temporal)--------------------------------------*/
+/* --------------------------animation--------------------------------------*/
 @keyframes linea_titulos{     
     0%{         
         background: linear-gradient(#ff6666, #ff6666);         
@@ -103,25 +103,24 @@ h1{
 }
 /*------------------------------------------nav------------------------------------------*/
 nav{
-    position:fixed;
-    transform: rotate(-90deg);
-    margin: 10px;
-    padding: 10px;
-    top: 43%;
-    left: -300px;
+    width: 80vh;
     background-color: #1f1f1f88;
+    position: fixed;
+    z-index: 10;
+    transform: rotate(-90deg);
+    top: 43%;
+    left: -14%;
 }
-nav ul li{
-    display: inline-block;
+ul{
+    width: 100%;
+    padding: 3px 0 3px 0;
 }
 .link_nav{
+    color: #ffffff;
+    text-transform: uppercase;
     font-size: 2rem;
     font-family: 'Alegreya Sans SC', sans-serif;
-    font-weight: 500;
     text-decoration: none;
-    margin-right: 30px;
-    margin-left:30px;
-    padding: 2px;
     background: linear-gradient(#ff6666, #ff6666);
     background-position: 0% 100%;
     background-repeat: no-repeat;
@@ -129,6 +128,7 @@ nav ul li{
     transition: background-size .3s;
 }
 .link_nav:hover{
+    color: #ffffff;
     background-size: 100% 2px;
 }
 #home, #projects, #agency, #maps, #contact{
@@ -144,10 +144,12 @@ h2{
     font-family: 'Source Sans Pro', serif;
     font-size: 5rem;
     width: auto;
+    font-weight: 700;
     border-left: #ff6666 solid 9px;
     padding-left: 10px;
     padding-bottom: 3px;
     margin-bottom: 10px;
+    text-transform: capitalize;
 }
 .parrafos{
     font-family: 'Alegreya Sans SC', sans-serif;
@@ -172,6 +174,7 @@ h2{
 }
 .texto_ancho{
     font-family: 'Source Sans Pro', serif;
+    text-transform: capitalize;
     font-size: 5rem;
     line-height: 100%;
     font-weight: 600;
@@ -208,6 +211,7 @@ header div{
 h1{
     font-family: 'Source Sans Pro', serif;
     font-size: 5rem;
+    font-weight: 600;
     padding: 5px;
     margin-top: 20px;
     text-transform: uppercase;
@@ -242,12 +246,15 @@ h1{
 /* -----------------main_Projects(p)------------------------------------------*/
 #tous{
     background-image: url(../imagenes/imagen1\(proyectos\).jpg);
+    height: auto;
 }
 #swa{
     background-image: url(../imagenes/imagen2\(proyectos\).jpg);
+    height: auto;
 }
 #locci{
     background-image: url(../imagenes/imagen4.jpg);
+    height: auto;
 }
 .ciudad{
     font-family: 'Alegreya Sans SC', sans-serif;
@@ -286,13 +293,19 @@ h1{
 /*-------------------------------------Main-agency--------------------------------*/
 #main_agency{
     background-image: url(../imagenes/imagen2\(proyectos\).jpg);
+    height: auto;
+}
+#wide{
+    margin: 40px 0 40px 0;
 }
 /*-------------------------------------Main-maps--------------------------------*/
 #maps1{
     background-image: url(../imagenes/imagen1\(proyectos\).jpg);
+    height: auto;
 }
 #maps2{
     background-image: url(../imagenes/baner\(proyectos\).jpg);
+    height: auto;
 }
 .titulo_mapa{
     display: flex;
@@ -306,6 +319,7 @@ h1{
 /*-------------------------------------Main-contact (con grid)--------------------------------*/
 #main_contact{
     background-image: url(../imagenes/imagen4.jpg);
+    height: 100vh;
 }
 .gird_forms{
     height:100%;
@@ -381,10 +395,12 @@ h1{
     text-decoration:none;
     border: 1px solid;
     padding: 7px 17px;
+    color: #ffffff;
 }
 .conoce_mas:hover{
     border: 1px solid #ff6666;
     background-color: #ff6666;
+    color: #ffffff;
 }
 /*---------------------------------------footer---------------------------------*/
 footer{
@@ -417,23 +433,28 @@ footer img{
 }
 /*------------------------------------------Responsive 1270-----------------------------------*/
 @media screen and (max-width: 1270px){
+    body{
+        width: 100%;
+    }
+ /*----------------------------nav(Responsive)---------------------------*/
     nav{
-        transform: none;
-        left: 50%;
-        top: 20px;
-        width: 95%;
-        transform: translate(-50%);
-        margin: 0%;
-    }  
-    nav ul{
-        display: flex;
-        flex-direction: row-reverse;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }  
+	    transform: none;
+	    left: 20px;
+	    top: 20px;
+	    width: auto;
+	    transform: translate(-50%);
+	    margin: 0%;
+	    border: #ff6666 2px solid;
+	    -webkit-transform: none;
+	    -moz-transform: none;
+	    -ms-transform: none;
+	    -o-transform: none;
+}  
+    #bot{
+    border: #ff6666 solid 2px;    
+    }
     .link_nav{
-        font-size: 3vh;
-        padding: 3px;
+        margin: 0 10px 0 10px;
     }
 /*----------------------------fonts(Responsive)---------------------------*/
     .texto_ancho{
@@ -465,7 +486,6 @@ footer img{
     .contenidos{
         padding: 10% 5%;
         margin: 0%;
-        width: 90%;
         height: auto;
         flex-direction: row;
         justify-content: space-evenly;
@@ -497,6 +517,10 @@ footer img{
         width: 200px;
     }
 /*------------------------------main-home(Responsive)-----------------------------*/
+    .main_home{
+        margin: 0%;
+        width: 100vw;
+    }
     .plano1, .plano2{
         width: 40%;
         height: auto;
@@ -521,10 +545,10 @@ footer img{
         }
 /*------------------------------main-contact(Responsive)-----------------------------*/
     .gird_forms{
-        height: 90vh;
+        height: auto;
         display: grid;
         grid-template-rows: repeat(9, 70px);
-        grid-template-columns: 70%;
+        grid-template-columns: 100%;
         align-content: space-between;
         grid-template-areas: 
         "name"
@@ -540,7 +564,7 @@ footer img{
 
     .textos_contact{
         font-size: 3rem;
-        padding: 10px 20px 10px 20px;
+        padding: 5px 20px 5px 20px;
         text-transform: lowercase;
         border: #ffffff solid 2px;
     }    
@@ -551,6 +575,6 @@ footer img{
     }
 /*------------------------------footer(Responsive)-----------------------------*/
     footer{
-        height: 15vh;
+        height: auto;
     }
 }

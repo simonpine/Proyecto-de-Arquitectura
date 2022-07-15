@@ -3,33 +3,43 @@
     <meta charset="UTF-8">
     <title>Web de Arquitectos - Maps</title> 
     <link rel="shortcut icon" href="../imagenes/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body class="maps">
-    <nav>
-        <ul>
-            <li>
-                <a href="#banner_maps" target="_self" class="link_nav hide">UP</a>
-            </li>
-            <li>
-                <a href="contactanos.html" class="link_nav">CONTACT</a>
-            </li>
-            <li>
-                <a href="mapa.html" id="maps" class="link_nav">MAPS</a>
-            </li>
-            <li>
-                <a href="agencia.html" class="link_nav">AGENCY</a>
-            </li>
-            <li>
-                <a href="proyectos.html" class="link_nav">PROJECTS</a>
-            </li>
-            <li>
-                <a href="../index.html" class="link_nav">HOME</a>
-            </li>
-        </ul>
-    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg position-fixed ">
+        <div class="container-fluid">
+          <button  id="bot" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav d-flex justify-content-around flex-md-row-reverse flex-sm-column">
+              <li class="nav-item">
+                <a class="link_nav" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="link_nav" aria-current="page" href="proyectos.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="link_nav" aria-current="page" href="agencia.html">Agency</a>
+              </li>
+              <li class="nav-item">
+                <a class="link_nav" aria-current="page" href="mapa.html" id="maps">Maps</a>
+              </li>
+              <li class="nav-item">
+                <a class="link_nav" aria-current="page" href="contactanos.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="link_nav" href="index.html">UP</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     <header id="banner_maps" class="baner cien centro">
         <div>
             <img src="../imagenes/logo(maps).png" alt="logo(projects)" class="logos_secundarios">
