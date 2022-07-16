@@ -230,6 +230,15 @@ h1{
 .marcas a img{
     width: 100%;
 }
+#carrusel{
+    background-color: #1f1f1f;
+}
+.bg-black{
+    background-color: #1f1f1f;
+}
+#carouselExampleControls{
+    display: none;
+}
 /*------------------------------------------Main-Home-----------------------------------*/
 #main_home{
     background-image: url(../imagenes/imagen4.jpg);
@@ -500,7 +509,7 @@ footer img{
         height: auto;
     }
     .contenidos5{
-        height: auto;
+        height: ;
     }
     .hide{
         display: none;
@@ -509,12 +518,15 @@ footer img{
     .marcas{
         padding-left: 0%;
         justify-content: space-around;
-        height: 200px;
+        height: auto;
     }
 
     .marcas a {
         height: 100%;
         width: 200px;
+    }
+    #carouselExampleControls{
+        display: none;
     }
 /*------------------------------main-home(Responsive)-----------------------------*/
     .main_home{
@@ -561,7 +573,9 @@ footer img{
         "message"
         "send";
     }
-
+    #main_contact{
+        height: auto;
+    }
     .textos_contact{
         font-size: 3rem;
         padding: 5px 20px 5px 20px;
@@ -576,5 +590,13 @@ footer img{
 /*------------------------------footer(Responsive)-----------------------------*/
     footer{
         height: auto;
+    }
+}
+@media screen and (max-width: 580px){
+    .marcas{
+        display: none;
+    }
+    #carouselExampleControls{
+        display: block;
     }
 }
