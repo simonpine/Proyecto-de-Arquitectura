@@ -64,13 +64,13 @@ h1{
     flex-direction: row-reverse;
 }
 .contenidos2{
-    height: 130vh;
+    height: auto;
 }
 .contenidos3{
-    height: 150vh;
+    height: auto;
 }
 .contenidos4{
-    height: 50vh;
+    height: auto;
 }
 .cien{
     width: 100%;
@@ -91,6 +91,10 @@ h1{
 #banner_agency{
     background-image: url(../imagenes/baner\(agencia\).jpg);
 }
+.negro{
+    background-color: #1f1f1f;
+}
+
 /* --------------------------------------anadidos-----------------------------------------*/
 #logo{
     width: 250px;
@@ -139,6 +143,10 @@ h2{
     font-family: 'Alegreya Sans SC', sans-serif;
     text-transform: lowercase;
     font-weight: 300;
+}
+h3{
+    text-transform: capitalize;
+    font-weight: 100;
 }
 .titulos{
     font-family: 'Source Sans Pro', serif;
@@ -215,6 +223,7 @@ h1{
     padding: 5px;
     margin-top: 20px;
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 /*------------------------------------------Marcas---------------------------------------*/
 .marcas{
@@ -248,6 +257,7 @@ h1{
     flex-direction: column;
     align-items: center;
     width:45%;
+    margin: 20px 0 20px 0;
 }
 .plano1{
     order: -1;
@@ -299,6 +309,12 @@ h1{
 .pading_left{
     padding-left: 4%;
 }
+.fotos3{
+    width: 100%;
+}
+.salmon{
+    background-color: #ff6666;
+}
 /*-------------------------------------Main-agency--------------------------------*/
 #main_agency{
     background-image: url(../imagenes/imagen2\(proyectos\).jpg);
@@ -324,6 +340,13 @@ h1{
 }
 .mapa{
     width: 90%;
+}
+.cerrar{
+    width: 20px;
+    height: 20px;
+}
+.margin_top{
+    margin-top: 20px;
 }
 /*-------------------------------------Main-contact (con grid)--------------------------------*/
 #main_contact{
@@ -397,6 +420,7 @@ h1{
 }
 /*-------------------------------------links--------------------------------*/
 .conoce_mas{
+    background-color: #1f1f1f00;
     font-family: 'Alegreya Sans SC', sans-serif;
     font-size: 1.5rem;
     text-transform: lowercase;
@@ -509,7 +533,7 @@ footer img{
         height: auto;
     }
     .contenidos5{
-        height: ;
+        height: auto;
     }
     .hide{
         display: none;
