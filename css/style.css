@@ -311,10 +311,12 @@ h1{
 }
 .fotos3{
     width: 100%;
+    border-radius: 5px;
 }
 .salmon{
     background-color: #ff6666;
 }
+
 /*-------------------------------------Main-agency--------------------------------*/
 #main_agency{
     background-image: url(../imagenes/imagen2\(proyectos\).jpg);
