@@ -13,6 +13,52 @@ img{
     height: auto;
     width: 35%;
 }
+/* ----------------------Layout-home(Grids)-----------------------*/
+.home{
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+    "header"
+    "ejemplos"
+    "marcas"
+    "main_home"
+    "footer";
+    background-color: #1f1f1f;
+}
+header{
+    grid-area: header;
+}
+#ejemplos{
+    display: flex;
+    flex-direction: column;
+    grid-area: ejemplos;
+}
+.marcas{
+    grid-area: marcas;
+}
+#main_home{
+    grid-area: main_home;
+}
+footer{
+    grid-area: footer;
+}
+/* ---------------------Layout-projects(Grids)------------------------*/
+.projects{
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "header_projects"
+    "main_projects"
+    "footer";
+}
+#banner_projects{
+    grid-area: header_projects;
+}
+#main_projects{
+    grid-area: main_projects;
+}
 /* --------------------------animation--------------------------------------*/
 @keyframes linea_titulos{     
     0%{         
