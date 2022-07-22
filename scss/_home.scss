@@ -1,0 +1,24 @@
+//marcas
+.marcas{
+    background-color: $negro;
+    padding: 20px 0 20px 6%;
+    display: flex;
+    flex-flow: wrap row-reverse;
+    justify-content: space-around;
+    a{
+        width: 160px;
+        img{
+            width: 100%;
+        }
+    }
+}
+#carrusel{
+    background-color: $negro;
+}
+#carouselExampleControls{
+    display: none;
+}
+//main
+.plano1{
+    order: -1;
+}

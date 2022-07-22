@@ -1,0 +1,20 @@
+
+//colors
+$salmon: #ff6666;
+$blanco: #ffff;
+$negro:#1f1f1f;
+$negro_t: #1f1f1f88;
+$transparent: rgba(255, 255, 255, 0);
+//uni
+*{
+    margin: 0;
+    padding: 0;
+    color: $blanco;
+}
+html{
+    font-size: 62.5%;
+}
+img{
+    width: 35%;
+    height: auto;
+}

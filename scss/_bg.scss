@@ -1,0 +1,85 @@
+.baner{
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment:fixed;
+}
+.contenidos{
+    padding: 10% 10% 10% 20%;
+    display: flex;
+    height: auto;
+    align-items:center;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-between;
+}
+.contenidos15{
+    flex-direction: row-reverse;
+}
+.cien{
+    width: 100%;
+    height: 100vh;
+}
+#banner_home{
+    background-image: url(../imagenes/baner.jpg);
+}
+#banner_maps{
+    background-image: url(../imagenes/baner\(mapas\).jpg);
+}
+#banner_contact{
+    background-image: url(../imagenes/baner\(contact\).jpg);
+}
+#banner_projects{
+    background-image: url(../imagenes/baner\(proyectos\).jpg);
+}
+#banner_agency{
+    background-image: url(../imagenes/baner\(agencia\).jpg);
+}
+.negro{
+    background-color: $negro;
+}
+#logo{
+    width: 250px;
+    height: 250px;
+}
+//home 
+//ejemplos
+#proyecto1{
+    background-image: url(../imagenes/imagen1.jpg);
+}
+#proyecto2{
+    background-image: url(../imagenes/imagen2.jpg);
+}
+#proyecto3{
+    background-image: url(../imagenes/imagen3.jpg);
+}
+//main
+#main_home{
+    background-image: url(../imagenes/imagen4.jpg);
+}
+//projects
+#tous{
+    background-image: url(../imagenes/imagen1\(proyectos\).jpg);
+}
+#swa{
+    background-image: url(../imagenes/imagen2\(proyectos\).jpg);
+}
+#locci{
+    background-image: url(../imagenes/imagen4.jpg);
+}
+//agency
+#main_agency{
+    background-image: url(../imagenes/imagen2\(proyectos\).jpg);
+}
+//maps
+#maps1{
+    background-image: url(../imagenes/imagen1\(proyectos\).jpg);
+}
+#maps2{
+    background-image: url(../imagenes/baner\(proyectos\).jpg);
+}
+//contact
+#main_contact{
+    background-image: url(../imagenes/imagen4.jpg);
+    height: 100vh;
+}

@@ -1,674 +1,643 @@
-/*valores absolutos*/
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;300;500&family=Source+Sans+Pro:wght@400;600&display=swap');
-
-html{
-    font-size: 62.5%;
-}
-*{
-    margin: 0rem;
-    padding: 0rem;
-    color: #ffffff;
-}
-img{
-    height: auto;
-    width: 35%;
-}
-/* ----------------------Layout-home(Grids)-----------------------*/
-.home{
-    display: grid;
-    grid-template-columns:100%;
-    grid-template-rows: auto auto auto auto auto;
-    grid-template-areas: 
-    "header"
-    "ejemplos"
-    "marcas"
-    "main_home"
-    "footer";
-    background-color: #1f1f1f;
-}
-header{
-    grid-area: header;
-}
-#ejemplos{
-    display: flex;
-    flex-direction: column;
-    grid-area: ejemplos;
-}
-.marcas{
-    grid-area: marcas;
-}
-#main_home{
-    grid-area: main_home;
-}
-footer{
-    grid-area: footer;
-}
-/* ---------------------Layout-projects(Grids)------------------------*/
-.projects{
-    display: grid;
-    grid-template-columns:100%;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: 
-    "header_projects"
-    "main_projects"
-    "footer";
-}
-#banner_projects{
-    grid-area: header_projects;
-}
-#main_projects{
-    grid-area: main_projects;
-}
-/* --------------------------animation--------------------------------------*/
-@keyframes linea_titulos{     
-    0%{         
-        background: linear-gradient(#ff6666, #ff6666);         
-        background-position: 0% 100%;         
-        background-repeat: no-repeat;         
-        background-size: 0% 5px;     
-    }     
-    25%{        
-        background: linear-gradient(#ff6666, #ff6666);         
-        background-position: 100% 100%;         
-        background-repeat: no-repeat;         
-        background-size: 100% 5px;     
-    }     
-    75%{         
-        background: linear-gradient(#ff6666, #ff6666);        
-         background-position: 0% 100%;         
-         background-repeat: no-repeat;        
-        background-size: 100% 5px;     
-    }
-    100%{
-        background: linear-gradient(#ff6666, #ff6666);        
-        background-position: 100% 100%;         
-        background-repeat: no-repeat;        
-        background-size: 0px 5px; 
-    } 
-} 
-h1{     
-    animation-name: linea_titulos;    
-    animation-duration: 7s;     
-    animation-iteration-count: infinite; 
-}
-/* --------------------------Banners(Fondos)--------------------------------------*/
-.baner{
-    background-repeat:no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment:fixed;
-}
-.contenidos{
-    padding: 10% 10% 10% 20%;
-    display: flex;
-    align-items:center;
-    flex-wrap: wrap;
-    align-content: space-around;
-    justify-content: space-between;
-}
-.contenidos15{
-    flex-direction: row-reverse;
-}
-.contenidos2{
-    height: auto;
-}
-.contenidos3{
-    height: auto;
-}
-.contenidos4{
-    height: auto;
-}
-.cien{
-    width: 100%;
-    height: 100vh;
-}
-#banner_home{
-    background-image: url(../imagenes/baner.jpg);
-}
-#banner_maps{
-    background-image: url(../imagenes/baner\(mapas\).jpg);
-}
-#banner_contact{
-    background-image: url(../imagenes/baner\(contact\).jpg);
-}
-#banner_projects{
-    background-image: url(../imagenes/baner\(proyectos\).jpg);
-}
-#banner_agency{
-    background-image: url(../imagenes/baner\(agencia\).jpg);
-}
-.negro{
-    background-color: #1f1f1f;
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;300;500&family=Source+Sans+Pro:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
 }
 
-/* --------------------------------------anadidos-----------------------------------------*/
-#logo{
-    width: 250px;
-    height: 250px;
+html {
+  font-size: 62.5%;
 }
-.centro{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+img {
+  width: 35%;
+  height: auto;
 }
-/*------------------------------------------nav------------------------------------------*/
-nav{
-    width: 80vh;
-    background-color: #1f1f1f88;
-    position: fixed;
-    z-index: 10;
-    transform: rotate(-90deg);
-    top: 43%;
-    left: -14%;
+
+h2 {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 300;
+  text-transform: lowercase;
 }
-ul{
-    width: 100%;
-    padding: 3px 0 3px 0;
+
+h3 {
+  text-transform: capitalize;
+  font-weight: 300;
 }
-.link_nav{
-    color: #ffffff;
-    text-transform: uppercase;
-    font-size: 2rem;
-    font-family: 'Alegreya Sans SC', sans-serif;
-    text-decoration: none;
+
+.titulos {
+  font-family: "Source Sans Pro", serif;
+  font-size: 5rem;
+  width: auto;
+  font-weight: 700;
+  border-left: #ff6666 solid 9px;
+  padding-left: 10px;
+  padding-bottom: 3px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.parrafos {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 2rem;
+  height: auto;
+  font-weight: 300;
+  text-align: justify;
+  text-indent: 30px;
+}
+
+.cua {
+  width: 13px;
+  height: 13px;
+  vertical-align: middle;
+}
+
+.ejemplos {
+  text-align: center;
+  position: relative;
+  top: 45%;
+}
+
+.texto_ancho {
+  font-family: "Source Sans Pro", serif;
+  text-transform: capitalize;
+  font-size: 5rem;
+  line-height: 100%;
+  font-weight: 700;
+}
+
+.texto_delgado {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 2.4rem;
+  font-style: normal;
+  line-height: 100%;
+  font-weight: 200;
+  margin-bottom: 1.1%;
+  margin-top: 3px;
+}
+
+nav {
+  width: 80vh;
+  background-color: rgba(31, 31, 31, 0.5333333333);
+  position: fixed;
+  z-index: 10;
+  transform: rotate(-90deg);
+  top: 43%;
+  left: -14%;
+}
+
+ul {
+  width: 100%;
+  padding: 3px 0 3px 0;
+}
+
+.link_nav {
+  color: white;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: "Alegreya Sans SC", sans-serif;
+  text-decoration: none;
+  background: linear-gradient(#ff6666, #ff6666);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+}
+.link_nav:hover {
+  color: white;
+  background-size: 100% 2px;
+}
+
+#home, #projects, #agency, #maps, #contact {
+  color: #ff6666;
+}
+
+.centro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-black {
+  background-color: #1f1f1f;
+}
+
+.titulo_parrafo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+  margin: 20px 0 20px 0;
+}
+
+.conoce_mas {
+  background-color: rgba(255, 255, 255, 0);
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 1.5rem;
+  text-transform: lowercase;
+  font-weight: 300;
+  text-decoration: none;
+  border: 1px solid;
+  padding: 7px 17px;
+  color: white;
+}
+
+.conoce_mas:hover {
+  border: 1px solid #ff6666;
+  background-color: #ff6666;
+  color: white;
+}
+
+.pading_left {
+  padding-left: 4%;
+}
+
+.pading_right {
+  padding-right: 10%;
+}
+
+.salmon {
+  background-color: #ff6666;
+}
+
+.margin_top {
+  margin-top: 20px;
+}
+
+@keyframes linea_titulos {
+  0% {
     background: linear-gradient(#ff6666, #ff6666);
     background-position: 0% 100%;
     background-repeat: no-repeat;
-    background-size: 0% 2px;
-    transition: background-size .3s;
+    background-size: 0% 5px;
+  }
+  25% {
+    background: linear-gradient(#ff6666, #ff6666);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 5px;
+  }
+  75% {
+    background: linear-gradient(#ff6666, #ff6666);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 5px;
+  }
+  100% {
+    background: linear-gradient(#ff6666, #ff6666);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 0px 5px;
+  }
 }
-.link_nav:hover{
-    color: #ffffff;
-    background-size: 100% 2px;
+h1 {
+  animation-name: linea_titulos;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  font-family: "Source Sans Pro", serif;
+  font-size: 5rem;
+  font-weight: 700;
+  padding: 5px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
-#home, #projects, #agency, #maps, #contact{
-    color:#ff6666;
+
+.logos_secundarios {
+  width: 200px;
+  height: 200px;
 }
-/* --------------------------Fonts--------------------------------------*/
-h2{
-    font-family: 'Alegreya Sans SC', sans-serif;
-    text-transform: lowercase;
-    font-weight: 300;
+
+header div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-h3{
-    text-transform: capitalize;
-    font-weight: 100;
+
+.baner {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
-.titulos{
-    font-family: 'Source Sans Pro', serif;
-    font-size: 5rem;
+
+.contenidos {
+  padding: 10% 10% 10% 20%;
+  display: flex;
+  height: auto;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-between;
+}
+
+.contenidos15 {
+  flex-direction: row-reverse;
+}
+
+.cien {
+  width: 100%;
+  height: 100vh;
+}
+
+#banner_home {
+  background-image: url(../imagenes/baner.jpg);
+}
+
+#banner_maps {
+  background-image: url(../imagenes/baner\(mapas\).jpg);
+}
+
+#banner_contact {
+  background-image: url(../imagenes/baner\(contact\).jpg);
+}
+
+#banner_projects {
+  background-image: url(../imagenes/baner\(proyectos\).jpg);
+}
+
+#banner_agency {
+  background-image: url(../imagenes/baner\(agencia\).jpg);
+}
+
+.negro {
+  background-color: #1f1f1f;
+}
+
+#logo {
+  width: 250px;
+  height: 250px;
+}
+
+#proyecto1 {
+  background-image: url(../imagenes/imagen1.jpg);
+}
+
+#proyecto2 {
+  background-image: url(../imagenes/imagen2.jpg);
+}
+
+#proyecto3 {
+  background-image: url(../imagenes/imagen3.jpg);
+}
+
+#main_home {
+  background-image: url(../imagenes/imagen4.jpg);
+}
+
+#tous {
+  background-image: url(../imagenes/imagen1\(proyectos\).jpg);
+}
+
+#swa {
+  background-image: url(../imagenes/imagen2\(proyectos\).jpg);
+}
+
+#locci {
+  background-image: url(../imagenes/imagen4.jpg);
+}
+
+#main_agency {
+  background-image: url(../imagenes/imagen2\(proyectos\).jpg);
+}
+
+#maps1 {
+  background-image: url(../imagenes/imagen1\(proyectos\).jpg);
+}
+
+#maps2 {
+  background-image: url(../imagenes/baner\(proyectos\).jpg);
+}
+
+#main_contact {
+  background-image: url(../imagenes/imagen4.jpg);
+  height: 100vh;
+}
+
+.marcas {
+  background-color: #1f1f1f;
+  padding: 20px 0 20px 6%;
+  display: flex;
+  flex-flow: wrap row-reverse;
+  justify-content: space-around;
+}
+.marcas a {
+  width: 160px;
+}
+.marcas a img {
+  width: 100%;
+}
+
+#carrusel {
+  background-color: #1f1f1f;
+}
+
+#carouselExampleControls {
+  display: none;
+}
+
+.plano1 {
+  order: -1;
+}
+
+.ciudad {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 3rem;
+  font-style: normal;
+  line-height: 100%;
+  font-weight: 500;
+  margin-bottom: 1.1%;
+  text-align: center;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.colash {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fotos {
+  width: 60%;
+  position: relative;
+}
+
+.fotos2 {
+  width: 50%;
+}
+
+.logos_m {
+  width: 30%;
+}
+
+.fotos3 {
+  width: 100%;
+  border-radius: 5px;
+}
+
+#wide {
+  margin: 40px 0 40px 0;
+}
+
+#name {
+  grid-area: name;
+}
+
+#number {
+  grid-area: number;
+}
+
+#email {
+  grid-area: email;
+}
+
+#city {
+  grid-area: city;
+}
+
+#company {
+  grid-area: company;
+}
+
+.textos_contact {
+  background-color: rgba(255, 255, 255, 0);
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  border: white solid 1px;
+  padding: 10px 40px 10px 40px;
+  text-transform: lowercase;
+  width: 100%;
+  font-size: 2rem;
+}
+
+.textos_contact1 {
+  border: none;
+  display: flex;
+  width: 83%;
+  justify-content: space-between;
+}
+
+.gird_forms {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(5, 15%);
+  grid-template-columns: 40% 40%;
+  column-gap: 10%;
+  justify-content: center;
+  align-content: center;
+  justify-items: start;
+  align-items: center;
+  grid-template-areas: "name company" "email message" "number message" "city message" "send none";
+}
+
+#message {
+  grid-area: message;
+  height: 85%;
+  padding: 20px;
+}
+
+#send {
+  grid-area: send;
+  font-size: 2rem;
+  padding: 5px 25px 5px 25px;
+  width: auto;
+}
+
+#company label:hover, #company input:hover, #city:hover {
+  cursor: pointer;
+}
+
+::placeholder {
+  color: white;
+}
+
+footer {
+  background-color: #1f1f1f;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 90px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#redes_sociales {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer img {
+  width: 45px;
+  height: 45px;
+  margin: 0px 9px 0 9px;
+}
+
+#copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.iconos_footer2 {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 1270px) {
+  body {
+    width: 100%;
+  }
+  /*----------------------------nav(Responsive)---------------------------*/
+  nav {
+    transform: none;
+    left: 20px;
+    top: 20px;
     width: auto;
-    font-weight: 700;
-    border-left: #ff6666 solid 9px;
-    padding-left: 10px;
-    padding-bottom: 3px;
-    margin-bottom: 10px;
-    text-transform: capitalize;
-}
-.parrafos{
-    font-family: 'Alegreya Sans SC', sans-serif;
-    font-size: 2rem;
-    height: auto;
-    font-weight: 300;
-    text-align: justify;
-    text-indent: 30px;
-}
-.cua{
-    width: 13px;
-    height: 13px;
-    vertical-align: middle;
-}
-/* -----------------ejemplos + baner (index)------------------------------------------*/
-.ejemplos{
-    text-align:center;
-    position: relative;
-    top: 45%;
-    width:auto;
-    height:auto;
-}
-.texto_ancho{
-    font-family: 'Source Sans Pro', serif;
-    text-transform: capitalize;
-    font-size: 5rem;
-    line-height: 100%;
-    font-weight: 600;
-}
-.texto_delgado{
-    font-family: 'Alegreya Sans SC', sans-serif;
-    font-size: 2.4rem;
-    font-style:normal;
-    line-height: 100%;
-    font-weight: 200;
-    margin-bottom: 1.1%;
-    margin-top: 3px;
-}
-section#proyecto1{
-    background-image: url(../imagenes/imagen1.jpg);
-}
-section#proyecto2{
-    background-image: url(../imagenes/imagen2.jpg);
-}
-section#proyecto3{
-    background-image: url(../imagenes/imagen3.jpg);
-}
-/* ----------------------logos(paginas)-------------------------*/
-header div{
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-}
-.logos_secundarios{
-    width: 200px;
-    height: 200px;
-}
-h1{
-    font-family: 'Source Sans Pro', serif;
-    font-size: 5rem;
-    font-weight: 600;
-    padding: 5px;
-    margin-top: 20px;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
-/*------------------------------------------Marcas---------------------------------------*/
-.marcas{
-    background-color: #1f1f1f;
-    padding: 20px 0 20px 6%;
-    display: flex;
-    flex-flow: wrap row-reverse;
-    justify-content: space-around;
-}
-.marcas a{
-    width: 160px;
-}
-.marcas a img{
+    transform: translate(-50%);
+    margin: 0%;
+    border: #ff6666 2px solid;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+  }
+  #bot {
+    border: #ff6666 solid 2px;
+  }
+  .link_nav {
+    margin: 0 10px 0 10px;
+  }
+  /*----------------------------fonts(Responsive)---------------------------*/
+  .texto_ancho {
+    font-size: 7vh;
+  }
+  .texto_delgado {
+    font-size: 5vh;
+  }
+  .conoce_mas {
+    font-size: 3vh;
+    padding: 0.7vh 3vh;
+    margin: 30px 0 30px 0;
+  }
+  .titulo_mapa {
     width: 100%;
-}
-#carrusel{
-    background-color: #1f1f1f;
-}
-.bg-black{
-    background-color: #1f1f1f;
-}
-#carouselExampleControls{
+  }
+  .titulo_parrafo {
+    width: 100%;
+    height: auto;
+  }
+  .parrafos {
+    font-size: 3vh;
+  }
+  .titulos {
+    font-size: 6vh;
+    margin: 40px;
+  }
+  /*------------------------------Banners(Responsive)-----------------------------*/
+  .contenidos {
+    padding: 10% 5%;
+    margin: 0%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .contenidos2 {
+    height: auto;
+  }
+  .contenidos3 {
+    height: auto;
+  }
+  .contenidos4 {
+    height: auto;
+  }
+  .contenidos5 {
+    height: auto;
+  }
+  .hide {
     display: none;
-}
-/*------------------------------------------Main-Home-----------------------------------*/
-#main_home{
-    background-image: url(../imagenes/imagen4.jpg);
-}
-.titulo_parrafo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width:45%;
-    margin: 20px 0 20px 0;
-}
-.plano1{
-    order: -1;
-}
-/* -----------------main_Projects(p)------------------------------------------*/
-#tous{
-    background-image: url(../imagenes/imagen1\(proyectos\).jpg);
-    height: auto;
-}
-#swa{
-    background-image: url(../imagenes/imagen2\(proyectos\).jpg);
-    height: auto;
-}
-#locci{
-    background-image: url(../imagenes/imagen4.jpg);
-    height: auto;
-}
-.ciudad{
-    font-family: 'Alegreya Sans SC', sans-serif;
-    font-size: 3rem;
-    font-style:normal;
-    line-height: 100%;
-    font-weight: 500;
-    margin-bottom: 1.1%;
-    text-align: center;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-}
-.colash{
-    display: flex;
-    flex-wrap: wrap;
-    width: 50%;
-    align-items: center;
-    justify-content: space-between;
-}
-.fotos{
-    width: 60%;
-    position:relative
-}
-.fotos2{
-    width: 50%;
-}
-.pading_right{
-    padding-right: 10%;
-}
-.logos_m{
-    width: 30%;
-}
-.pading_left{
-    padding-left: 4%;
-}
-.fotos3{
-    width: 100%;
-    border-radius: 5px;
-}
-.salmon{
-    background-color: #ff6666;
-}
-
-/*-------------------------------------Main-agency--------------------------------*/
-#main_agency{
-    background-image: url(../imagenes/imagen2\(proyectos\).jpg);
-    height: auto;
-}
-#wide{
-    margin: 40px 0 40px 0;
-}
-/*-------------------------------------Main-maps--------------------------------*/
-#maps1{
-    background-image: url(../imagenes/imagen1\(proyectos\).jpg);
-    height: auto;
-}
-#maps2{
-    background-image: url(../imagenes/baner\(proyectos\).jpg);
-    height: auto;
-}
-.titulo_mapa{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    align-items: center;
-}
-.mapa{
-    width: 90%;
-}
-.cerrar{
-    width: 20px;
-    height: 20px;
-}
-.margin_top{
-    margin-top: 20px;
-}
-/*-------------------------------------Main-contact (con grid)--------------------------------*/
-#main_contact{
-    background-image: url(../imagenes/imagen4.jpg);
-    height: 100vh;
-}
-.gird_forms{
-    height:100%;
-    width: 100%;
-    display: grid;
-    grid-template-rows: repeat(5, 15%);
-    grid-template-columns: 40% 40%;
-    column-gap: 10%;
-    justify-content: center;
-    align-content: center;
-    justify-items: start;
-    align-items:center;
-    grid-template-areas: 
-    "name company"
-    "email message"
-    "number message"
-    "city message"
-    "send none";
-}
-.textos_contact{
-    background-color: #ffffff00;
-    font-family: 'Alegreya Sans SC', sans-serif;
-    font-size: 2rem;
-    font-weight: 300;
-    border: #ffffff solid 1px;
-    padding: 10px 40px 10px 40px;
-    text-transform: lowercase;
-    width: 100%;
-}
-.textos_contact1{
-    border: none;
-    display: flex;
-    width: 83%;
-    justify-content: space-between;
-}
-
-#name{
-    grid-area: name;
-}
-#number{
-    grid-area: number;
-}
-#email{
-    grid-area: email;
-}
-#city{
-    grid-area: city;
-}
-#company{
-    grid-area: company;
-}
-#company label:hover, #company input:hover, #city:hover{
-    cursor:pointer;
-}
-#message{
-    grid-area: message;
-    height: 90%;
-    padding: 20px;
-}
-#send{
-    grid-area: send;
-    font-size: 2rem;
-}
-::placeholder{
-    color: #ffffff;
-}
-/*-------------------------------------links--------------------------------*/
-.conoce_mas{
-    background-color: #1f1f1f00;
-    font-family: 'Alegreya Sans SC', sans-serif;
-    font-size: 1.5rem;
-    text-transform: lowercase;
-    font-weight: 300;
-    text-decoration:none;
-    border: 1px solid;
-    padding: 7px 17px;
-    color: #ffffff;
-}
-.conoce_mas:hover{
-    border: 1px solid #ff6666;
-    background-color: #ff6666;
-    color: #ffffff;
-}
-/*---------------------------------------footer---------------------------------*/
-footer{
-    background-color: #1f1f1f;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 90px;
-    align-items: center;
+  }
+  /*------------------------------marcas(Responsive)-----------------------------*/
+  .marcas {
+    padding-left: 0%;
     justify-content: space-around;
+    height: auto;
+  }
+  .marcas a {
+    height: 100%;
+    width: 200px;
+  }
+  #carouselExampleControls {
+    display: none;
+  }
+  /*------------------------------main-home(Responsive)-----------------------------*/
+  .main_home {
+    margin: 0%;
+    width: 100vw;
+  }
+  .plano1, .plano2 {
+    width: 40%;
+    height: auto;
+    order: 1;
+  }
+  #quienes_somos {
+    order: 0;
+  }
+  #que_ofrecemos {
+    order: 2;
+  }
+  /*------------------------------main-projects(Responsive)-----------------------------*/
+  .fotos2 {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+  .colash {
+    justify-content: space-around;
+  }
+  .pading_left, .pading_right {
+    padding: 0%;
+  }
+  /*------------------------------main-contact(Responsive)-----------------------------*/
+  .gird_forms {
+    height: auto;
+    display: grid;
+    grid-template-rows: repeat(9, 70px);
+    grid-template-columns: 100%;
+    align-content: space-between;
+    grid-template-areas: "name" "email" "number" "city" "company" "message" "message" "message" "send";
+  }
+  #main_contact {
+    height: auto;
+  }
+  .textos_contact {
+    font-size: 3rem;
+    padding: 5px 20px 5px 20px;
+    text-transform: lowercase;
+    border: #ffffff solid 2px;
+  }
+  .textos_contact1 {
+    justify-content: space-evenly;
+    width: 95%;
+    border: none;
+  }
+  /*------------------------------footer(Responsive)-----------------------------*/
+  footer {
+    height: auto;
+  }
 }
-#redes_sociales{
-    display: flex;
-    flex-wrap: wrap;
+@media screen and (max-width: 580px) {
+  .marcas {
+    display: none;
+  }
+  #carouselExampleControls {
+    display: block;
+  }
 }
-footer img{
-    width: 45px;
-    height: 45px;
-    margin: 0px 9px 0 9px;
-}
-#copy{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.iconos_footer2{
-    width: 30px;
-    height: 30px;
-    vertical-align:middle;
-}
-/*------------------------------------------Responsive 1270-----------------------------------*/
-@media screen and (max-width: 1270px){
-    body{
-        width: 100%;
-    }
- /*----------------------------nav(Responsive)---------------------------*/
-    nav{
-	    transform: none;
-	    left: 20px;
-	    top: 20px;
-	    width: auto;
-	    transform: translate(-50%);
-	    margin: 0%;
-	    border: #ff6666 2px solid;
-	    -webkit-transform: none;
-	    -moz-transform: none;
-	    -ms-transform: none;
-	    -o-transform: none;
-}  
-    #bot{
-    border: #ff6666 solid 2px;    
-    }
-    .link_nav{
-        margin: 0 10px 0 10px;
-    }
-/*----------------------------fonts(Responsive)---------------------------*/
-    .texto_ancho{
-        font-size: 7vh;
-    }
-    .texto_delgado{
-        font-size: 5vh;
-    }
-    .conoce_mas{
-        font-size: 3vh;
-        padding: 0.7vh 3vh;
-        margin: 30px 0 30px 0;
-    }
-    .titulo_mapa{
-        width: 100%;
-    }
-    .titulo_parrafo{
-        width: 100%;
-        height: auto;
-    }
-    .parrafos{
-        font-size: 3vh;
-    }
-    .titulos{
-        font-size: 6vh;
-        margin: 40px;
-    }
-/*------------------------------Banners(Responsive)-----------------------------*/
-    .contenidos{
-        padding: 10% 5%;
-        margin: 0%;
-        height: auto;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-    .contenidos2{
-        height: auto;
-    }
-    .contenidos3{
-        height: auto;
-    }
-    .contenidos4{
-        height: auto;
-    }
-    .contenidos5{
-        height: auto;
-    }
-    .hide{
-        display: none;
-    }
-/*------------------------------marcas(Responsive)-----------------------------*/
-    .marcas{
-        padding-left: 0%;
-        justify-content: space-around;
-        height: auto;
-    }
 
-    .marcas a {
-        height: 100%;
-        width: 200px;
-    }
-    #carouselExampleControls{
-        display: none;
-    }
-/*------------------------------main-home(Responsive)-----------------------------*/
-    .main_home{
-        margin: 0%;
-        width: 100vw;
-    }
-    .plano1, .plano2{
-        width: 40%;
-        height: auto;
-        order: 1;
-    }
-    #quienes_somos{
-        order: 0;
-    }
-    #que_ofrecemos{
-        order: 2;
-    }
-/*------------------------------main-projects(Responsive)-----------------------------*/
-        .fotos2{
-            margin-top: 70px;
-            margin-bottom: 70px;
-        }
-        .colash{
-            justify-content: space-around;
-        }
-        .pading_left, .pading_right{
-            padding: 0%;
-        }
-/*------------------------------main-contact(Responsive)-----------------------------*/
-    .gird_forms{
-        height: auto;
-        display: grid;
-        grid-template-rows: repeat(9, 70px);
-        grid-template-columns: 100%;
-        align-content: space-between;
-        grid-template-areas: 
-        "name"
-        "email"
-        "number"
-        "city"
-        "company"
-        "message"
-        "message"
-        "message"
-        "send";
-    }
-    #main_contact{
-        height: auto;
-    }
-    .textos_contact{
-        font-size: 3rem;
-        padding: 5px 20px 5px 20px;
-        text-transform: lowercase;
-        border: #ffffff solid 2px;
-    }    
-    .textos_contact1{
-        justify-content: space-evenly;
-        width: 95%;
-        border: none;
-    }
-/*------------------------------footer(Responsive)-----------------------------*/
-    footer{
-        height: auto;
-    }
-}
-@media screen and (max-width: 580px){
-    .marcas{
-        display: none;
-    }
-    #carouselExampleControls{
-        display: block;
-    }
-}
+/*# sourceMappingURL=style.css.map */

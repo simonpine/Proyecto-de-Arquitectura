@@ -1,0 +1,70 @@
+//con grids
+#name{
+    grid-area: name;
+}
+#number{
+    grid-area: number;
+}
+#email{
+    grid-area: email;
+}
+#city{
+    grid-area: city;
+}
+#company{
+    grid-area: company;
+}
+.textos_contact{
+    background-color: $transparent;
+    font-family: $secundaryFont;
+    font-size: $medium;
+    font-weight: $thin;
+    border: $blanco solid 1px;
+    padding: 10px 40px 10px 40px;
+    text-transform: $lower;
+    width: 100%;
+    font-size: $medium;
+}
+.textos_contact1{
+    border: none;
+    display: flex;
+    width: 83%;
+    justify-content: space-between;
+}
+.gird_forms{
+    height:100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(5, 15%);
+    grid-template-columns: 40% 40%;
+    column-gap: 10%;
+    justify-content: center;
+    align-content: center;
+    justify-items: start;
+    align-items:center;
+    grid-template-areas: 
+    "name company"
+    "email message"
+    "number message"
+    "city message"
+    "send none";
+}
+#message{
+    grid-area: message;
+    height: 85%;
+    padding: 20px;
+}
+#send{
+    grid-area: send;
+    font-size: $medium;
+    padding: 5px 25px 5px 25px;
+    width: auto;
+}
+#company label, #company input, #city{
+    &:hover{
+        cursor: pointer;
+    }
+}
+::placeholder{
+    color: $blanco;
+}

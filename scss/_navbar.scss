@@ -1,0 +1,32 @@
+nav{
+    width: 80vh;
+    background-color: $negro_t;
+    position: fixed;
+    z-index: 10;
+    transform: rotate(-90deg);
+    top: 43%;
+    left: -14%;
+}
+ul{
+    width: 100%;
+    padding: 3px 0 3px 0;
+}
+.link_nav{
+    color: $blanco;
+    text-transform: $uper;
+    font-size: $medium;
+    font-family: $secundaryFont;
+    text-decoration: none;
+    background: linear-gradient($salmon, $salmon);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+    &:hover{
+        color: $blanco;
+        background-size: 100% 2px;
+    }
+}
+#home, #projects, #agency, #maps, #contact{
+    color:$salmon;
+}

@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;300;500&family=Source+Sans+Pro:wght@400;600&display=swap');
+
+$mainFont: 'Source Sans Pro', serif;
+$secundaryFont: 'Alegreya Sans SC', sans-serif;
+$capy: capitalize;
+$uper: uppercase;
+$lower:lowercase;
+$medium:2rem;
+$medium_s:2.4rem;
+$medium_b:3rem;
+$big:5rem;
+$small:1.5rem;
+$thin:300;
+$ht:500;
+$heavy:700;
+//Conjuntos
+h2{
+    font-family: $secundaryFont;
+    font-weight: $thin;
+    text-transform: $lower;
+}
+h3{
+    text-transform: $capy;
+    font-weight: $thin;
+}
+.titulos{
+    font-family: $mainFont;
+    font-size: $big;
+    width: auto;
+    font-weight: $heavy;
+    border-left: $salmon solid 9px;
+    padding-left: 10px;
+    padding-bottom: 3px;
+    margin-bottom: 10px;
+    text-transform: $capy;
+}
+.parrafos{
+    font-family: $secundaryFont;
+    font-size: $medium;
+    height: auto;
+    font-weight: $thin;
+    text-align: justify;
+    text-indent: 30px;
+}
+.cua{
+    width: 13px;
+    height: 13px;
+    vertical-align: middle;
+}
+//home
+//ejemplos
+.ejemplos{
+    text-align:center;
+    position: relative;
+    top: 45%;
+}
+.texto_ancho{
+    font-family: $mainFont;
+    text-transform: $capy;
+    font-size: $big;
+    line-height: 100%;
+    font-weight: $heavy;
+}
+.texto_delgado{
+    font-family: $secundaryFont;
+    font-size:$medium_s;
+    font-style:normal;
+    line-height: 100%;
+    font-weight: 200;
+    margin-bottom: 1.1%;
+    margin-top: 3px;
+}

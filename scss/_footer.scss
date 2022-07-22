@@ -1,0 +1,28 @@
+footer{
+    background-color: $negro;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 90px;
+    align-items: center;
+    justify-content: space-around;
+}
+#redes_sociales{
+    display: flex;
+    flex-wrap: wrap;
+}
+footer img{
+    width: 45px;
+    height: 45px;
+    margin: 0px 9px 0 9px;
+}
+#copy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.iconos_footer2{
+    width: 30px;
+    height: 30px;
+    vertical-align:middle;
+}

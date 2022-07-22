@@ -1,0 +1,159 @@
+@media screen and (max-width: 1270px){
+    body{
+        width: 100%;
+    }
+ /*----------------------------nav(Responsive)---------------------------*/
+    nav{
+	    transform: none;
+	    left: 20px;
+	    top: 20px;
+	    width: auto;
+	    transform: translate(-50%);
+	    margin: 0%;
+	    border: #ff6666 2px solid;
+	    -webkit-transform: none;
+	    -moz-transform: none;
+	    -ms-transform: none;
+	    -o-transform: none;
+}  
+    #bot{
+    border: #ff6666 solid 2px;    
+    }
+    .link_nav{
+        margin: 0 10px 0 10px;
+    }
+/*----------------------------fonts(Responsive)---------------------------*/
+    .texto_ancho{
+        font-size: 7vh;
+    }
+    .texto_delgado{
+        font-size: 5vh;
+    }
+    .conoce_mas{
+        font-size: 3vh;
+        padding: 0.7vh 3vh;
+        margin: 30px 0 30px 0;
+    }
+    .titulo_mapa{
+        width: 100%;
+    }
+    .titulo_parrafo{
+        width: 100%;
+        height: auto;
+    }
+    .parrafos{
+        font-size: 3vh;
+    }
+    .titulos{
+        font-size: 6vh;
+        margin: 40px;
+    }
+/*------------------------------Banners(Responsive)-----------------------------*/
+    .contenidos{
+        padding: 10% 5%;
+        margin: 0%;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .contenidos2{
+        height: auto;
+    }
+    .contenidos3{
+        height: auto;
+    }
+    .contenidos4{
+        height: auto;
+    }
+    .contenidos5{
+        height: auto;
+    }
+    .hide{
+        display: none;
+    }
+/*------------------------------marcas(Responsive)-----------------------------*/
+    .marcas{
+        padding-left: 0%;
+        justify-content: space-around;
+        height: auto;
+    }
+
+    .marcas a {
+        height: 100%;
+        width: 200px;
+    }
+    #carouselExampleControls{
+        display: none;
+    }
+/*------------------------------main-home(Responsive)-----------------------------*/
+    .main_home{
+        margin: 0%;
+        width: 100vw;
+    }
+    .plano1, .plano2{
+        width: 40%;
+        height: auto;
+        order: 1;
+    }
+    #quienes_somos{
+        order: 0;
+    }
+    #que_ofrecemos{
+        order: 2;
+    }
+/*------------------------------main-projects(Responsive)-----------------------------*/
+        .fotos2{
+            margin-top: 70px;
+            margin-bottom: 70px;
+        }
+        .colash{
+            justify-content: space-around;
+        }
+        .pading_left, .pading_right{
+            padding: 0%;
+        }
+/*------------------------------main-contact(Responsive)-----------------------------*/
+    .gird_forms{
+        height: auto;
+        display: grid;
+        grid-template-rows: repeat(9, 70px);
+        grid-template-columns: 100%;
+        align-content: space-between;
+        grid-template-areas: 
+        "name"
+        "email"
+        "number"
+        "city"
+        "company"
+        "message"
+        "message"
+        "message"
+        "send";
+    }
+    #main_contact{
+        height: auto;
+    }
+    .textos_contact{
+        font-size: 3rem;
+        padding: 5px 20px 5px 20px;
+        text-transform: lowercase;
+        border: #ffffff solid 2px;
+    }    
+    .textos_contact1{
+        justify-content: space-evenly;
+        width: 95%;
+        border: none;
+    }
+/*------------------------------footer(Responsive)-----------------------------*/
+    footer{
+        height: auto;
+    }
+}
+@media screen and (max-width: 580px){
+    .marcas{
+        display: none;
+    }
+    #carouselExampleControls{
+        display: block;
+    }
+}

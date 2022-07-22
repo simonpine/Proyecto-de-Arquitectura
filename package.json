@@ -1,0 +1,21 @@
+{
+  "name": "web_arquitectos",
+  "version": "1.0.0",
+  "description": "Pagina web creada para aquitectos asociados",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass",
+		"sass:watch": "sass --watch scss/main.scss  css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simonpine/Proyecto-de-Arquitectura.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simonpine/Proyecto-de-Arquitectura/issues"
+  },
+  "homepage": "https://github.com/simonpine/Proyecto-de-Arquitectura#readme"
+}

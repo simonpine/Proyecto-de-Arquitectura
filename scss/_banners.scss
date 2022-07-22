@@ -1,0 +1,50 @@
+@keyframes linea_titulos{     
+    0%{         
+        background: linear-gradient($salmon, $salmon);         
+        background-position: 0% 100%;         
+        background-repeat: no-repeat;         
+        background-size: 0% 5px;     
+    }     
+    25%{        
+        background: linear-gradient($salmon, $salmon);         
+        background-position: 100% 100%;         
+        background-repeat: no-repeat;         
+        background-size: 100% 5px;     
+    }     
+    75%{         
+        background: linear-gradient($salmon, $salmon);        
+         background-position: 0% 100%;         
+         background-repeat: no-repeat;        
+        background-size: 100% 5px;     
+    }
+    100%{
+        background: linear-gradient($salmon, $salmon);        
+        background-position: 100% 100%;         
+        background-repeat: no-repeat;        
+        background-size: 0px 5px; 
+    } 
+} 
+h1{     
+    animation-name: linea_titulos;    
+    animation-duration: 7s;     
+    animation-iteration-count: infinite; 
+    font-family: $mainFont;
+    font-size: $big;
+    font-weight: $heavy;
+    padding: 5px;
+    margin-top: 20px;
+    text-transform: $uper;
+    margin-bottom: 20px;
+}
+.logos_secundarios{
+    width: 200px;
+    height: 200px;
+}
+header{ 
+    div{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+}
