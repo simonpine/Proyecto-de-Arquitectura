@@ -35,10 +35,25 @@ h1{
     margin-top: 20px;
     text-transform: $uper;
     margin-bottom: 20px;
+    @media screen and (max-width: 1270px){
+        font-size: 4rem;
+    }
+}
+#logo{
+    width: 250px;
+    height: 250px;
+    @media screen and (max-width: 1270px){
+        width: 15rem;
+        height: 15rem;
+    }
 }
 .logos_secundarios{
     width: 200px;
     height: 200px;
+    @media screen and (max-width: 1270px){
+        width: 150px;
+        height: 150px;
+    }
 }
 header{ 
     div{

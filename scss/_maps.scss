@@ -1,0 +1,17 @@
+.titulo_mapa{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    @media screen and (max-width: 1270px){
+        width: 100%;
+    }
+}
+.mapa{
+    width: 90%;
+    height: 400px;
+}
+.cerrar{
+    width: 20px;
+    height: 20px;
+}

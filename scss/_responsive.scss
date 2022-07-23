@@ -2,7 +2,7 @@
     body{
         width: 100%;
     }
- /*----------------------------nav(Responsive)---------------------------*/
+ //nav
     nav{
 	    transform: none;
 	    left: 20px;
@@ -10,43 +10,17 @@
 	    width: auto;
 	    transform: translate(-50%);
 	    margin: 0%;
-	    border: #ff6666 2px solid;
+	    border: $salmon 2px solid;
 	    -webkit-transform: none;
 	    -moz-transform: none;
 	    -ms-transform: none;
 	    -o-transform: none;
-}  
+    }  
     #bot{
-    border: #ff6666 solid 2px;    
+    border: $salmon solid 2px;    
     }
     .link_nav{
         margin: 0 10px 0 10px;
-    }
-/*----------------------------fonts(Responsive)---------------------------*/
-    .texto_ancho{
-        font-size: 7vh;
-    }
-    .texto_delgado{
-        font-size: 5vh;
-    }
-    .conoce_mas{
-        font-size: 3vh;
-        padding: 0.7vh 3vh;
-        margin: 30px 0 30px 0;
-    }
-    .titulo_mapa{
-        width: 100%;
-    }
-    .titulo_parrafo{
-        width: 100%;
-        height: auto;
-    }
-    .parrafos{
-        font-size: 3vh;
-    }
-    .titulos{
-        font-size: 6vh;
-        margin: 40px;
     }
 /*------------------------------Banners(Responsive)-----------------------------*/
     .contenidos{
@@ -55,18 +29,6 @@
         height: auto;
         flex-direction: row;
         justify-content: space-evenly;
-    }
-    .contenidos2{
-        height: auto;
-    }
-    .contenidos3{
-        height: auto;
-    }
-    .contenidos4{
-        height: auto;
-    }
-    .contenidos5{
-        height: auto;
     }
     .hide{
         display: none;
@@ -137,7 +99,7 @@
         font-size: 3rem;
         padding: 5px 20px 5px 20px;
         text-transform: lowercase;
-        border: #ffffff solid 2px;
+        border: $blanco solid 2px;
     }    
     .textos_contact1{
         justify-content: space-evenly;

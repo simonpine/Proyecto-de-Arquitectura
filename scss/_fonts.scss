@@ -60,6 +60,9 @@ h3{
     font-size: $big;
     line-height: 100%;
     font-weight: $heavy;
+    @media screen and (max-width: 1270px){
+        font-size: 7vh;
+    }
 }
 .texto_delgado{
     font-family: $secundaryFont;
@@ -69,4 +72,11 @@ h3{
     font-weight: 200;
     margin-bottom: 1.1%;
     margin-top: 3px;
+    @media screen and (max-width: 1270px){
+        font-size: 5vh;
+    }
+}
+.titulos{
+    font-size: 6vh;
+    margin: 40px;
 }
