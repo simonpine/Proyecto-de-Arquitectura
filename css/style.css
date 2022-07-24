@@ -45,6 +45,11 @@ h3 {
   text-align: justify;
   text-indent: 30px;
 }
+.parrafos::first-letter {
+  padding-bottom: 0;
+  padding-left: 7px;
+  border-left: 20px solid #ff6666;
+}
 
 .cua {
   width: 13px;

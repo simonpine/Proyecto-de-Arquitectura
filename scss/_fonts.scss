@@ -41,6 +41,11 @@ h3{
     font-weight: $thin;
     text-align: justify;
     text-indent: 30px;
+    &::first-letter{
+        padding-bottom: 0;
+        padding-left: 7px;
+        border-left: 20px solid $salmon;
+    }
 }
 .cua{
     width: 13px;
