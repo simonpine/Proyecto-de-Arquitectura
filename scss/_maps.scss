@@ -1,8 +1,6 @@
 .titulo_mapa{
-    display: flex;
-    flex-direction: column;
+    @include flex(column, space-around, space-between, center, wrap);
     width: 50%;
-    align-items: center;
     @media screen and (max-width: 1270px){
         width: 100%;
     }

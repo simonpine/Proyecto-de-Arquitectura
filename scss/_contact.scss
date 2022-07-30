@@ -15,11 +15,11 @@
     grid-area: company;
 }
 .textos_contact{
-    background-color: $transparent;
+    background-color: map-get($map:$colors, $key: 't');
     font-family: $secundaryFont;
     font-size: $medium;
     font-weight: $thin;
-    border: $blanco solid 1px;
+    border: map-get($map:$colors, $key: 'secu') solid 1px;
     padding: 10px 40px 10px 40px;
     text-transform: $lower;
     width: 100%;
@@ -27,9 +27,8 @@
 }
 .textos_contact1{
     border: none;
-    display: flex;
+    @include flex(row, space-around, space-between, center, wrap);
     width: 83%;
-    justify-content: space-between;
 }
 .gird_forms{
     height:100%;
@@ -54,17 +53,23 @@
     height: 85%;
     padding: 20px;
 }
-#send{
-    grid-area: send;
-    font-size: $medium;
-    padding: 5px 25px 5px 25px;
-    width: auto;
-}
 #company label, #company input, #city{
     &:hover{
         cursor: pointer;
     }
 }
 ::placeholder{
-    color: $blanco;
+    color:map-get($map:$colors, $key: 'secu');
+}
+.conoce_mas_c{
+    @extend .conoce_mas;
+    grid-area: send;
+    font-size: $medium;
+    padding: 5px 45px 5px 45px;
+    @media screen and (max-width: 1270px){
+        font-size: 3rem;
+        padding: 5px 20px 5px 20px;
+        text-transform: lowercase;
+        border: map-get($map:$colors, $key: 'secu') solid 2px;
+    }
 }

@@ -28,7 +28,7 @@ h3{
     font-size: $big;
     width: auto;
     font-weight: $heavy;
-    border-left: $salmon solid 9px;
+    border-left: map-get($map:$colors, $key: 'deta') solid 9px;
     padding-left: 10px;
     padding-bottom: 3px;
     margin-bottom: 10px;
@@ -44,14 +44,10 @@ h3{
     &::first-letter{
         padding-bottom: 0;
         padding-left: 7px;
-        border-left: 20px solid $salmon;
+        border-left: 20px solid map-get($map:$colors, $key: 'deta');
     }
 }
-.cua{
-    width: 13px;
-    height: 13px;
-    vertical-align: middle;
-}
+
 //home
 //ejemplos
 .ejemplos{

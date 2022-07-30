@@ -10,14 +10,14 @@
 	    width: auto;
 	    transform: translate(-50%);
 	    margin: 0%;
-	    border: $salmon 2px solid;
+	    border: map-get($map:$colors, $key: 'deta') 2px solid;
 	    -webkit-transform: none;
 	    -moz-transform: none;
 	    -ms-transform: none;
 	    -o-transform: none;
     }  
     #bot{
-    border: $salmon solid 2px;    
+    border: map-get($map:$colors, $key: 'deta') solid 2px;    
     }
     .link_nav{
         margin: 0 10px 0 10px;
@@ -99,7 +99,7 @@
         font-size: 3rem;
         padding: 5px 20px 5px 20px;
         text-transform: lowercase;
-        border: $blanco solid 2px;
+        border: map-get($map:$colors, $key: 'secu') solid 2px;
     }    
     .textos_contact1{
         justify-content: space-evenly;

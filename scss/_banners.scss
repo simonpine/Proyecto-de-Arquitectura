@@ -1,24 +1,24 @@
 @keyframes linea_titulos{     
     0%{         
-        background: linear-gradient($salmon, $salmon);         
+        background: linear-gradient(map-get($map:$colors, $key: 'deta'), map-get($map:$colors, $key: 'deta'));         
         background-position: 0% 100%;         
         background-repeat: no-repeat;         
         background-size: 0% 5px;     
     }     
     25%{        
-        background: linear-gradient($salmon, $salmon);         
+        background: linear-gradient(map-get($map:$colors, $key: 'deta'), map-get($map:$colors, $key: 'deta'));         
         background-position: 100% 100%;         
         background-repeat: no-repeat;         
         background-size: 100% 5px;     
     }     
     75%{         
-        background: linear-gradient($salmon, $salmon);        
+        background: linear-gradient(map-get($map:$colors, $key: 'deta'), map-get($map:$colors, $key: 'deta'));        
          background-position: 0% 100%;         
          background-repeat: no-repeat;        
         background-size: 100% 5px;     
     }
     100%{
-        background: linear-gradient($salmon, $salmon);        
+        background: linear-gradient(map-get($map:$colors, $key: 'deta'), map-get($map:$colors, $key: 'deta'));        
         background-position: 100% 100%;         
         background-repeat: no-repeat;        
         background-size: 0px 5px; 
@@ -57,9 +57,6 @@ h1{
 }
 header{ 
     div{
-        display: flex;
-        flex-direction:column;
-        justify-content: center;
-        align-items: center;
+        @include flex(column, center, center, center, wrap)
     }
 }

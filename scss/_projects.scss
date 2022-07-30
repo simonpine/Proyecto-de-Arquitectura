@@ -10,11 +10,13 @@
     text-transform: $uper;
 }
 .colash{
-    display: flex;
-    flex-wrap: wrap;
+    @include flex(row, space-around, space-between, center, wrap);
     width: 50%;
-    align-items: center;
-    justify-content: space-between;
+}
+.colash_swa{
+    @extend .colash;
+    flex-direction: row-reverse;
+    width: 45%;
 }
 .fotos{
     width: 60%;
@@ -24,6 +26,9 @@
     width: 50%;
 }
 .logos_m{
+    width: 30%;
+}
+.logos_s{
     width: 30%;
 }
 .fotos3{

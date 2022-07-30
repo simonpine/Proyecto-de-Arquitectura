@@ -1,10 +1,8 @@
 //marcas
 .marcas{
-    background-color: $negro;
+    background-color: map-get($map:$colors, $key: 'main');
     padding: 20px 0 20px 6%;
-    display: flex;
-    flex-flow: wrap row-reverse;
-    justify-content: space-around;
+    @include flex(row-reverse, space-around, space-around, center, wrap);
     a{
         width: 160px;
         img{
@@ -13,7 +11,7 @@
     }
 }
 #carrusel{
-    background-color: $negro;
+    background-color: map-get($map:$colors, $key: 'main');
 }
 #carouselExampleControls{
     display: none;

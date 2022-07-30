@@ -51,12 +51,6 @@ h3 {
   border-left: 20px solid #ff6666;
 }
 
-.cua {
-  width: 13px;
-  height: 13px;
-  vertical-align: middle;
-}
-
 .ejemplos {
   text-align: center;
   position: relative;
@@ -134,46 +128,56 @@ ul {
 
 .centro {
   display: flex;
+  flex-direction: row;
+  align-content: center;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .bg-black {
   background-color: #1f1f1f;
 }
 
-.titulo_parrafo {
+.titulo_parrafo, .titulo_parrafo_a {
   display: flex;
   flex-direction: column;
+  align-content: center;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   width: 45%;
   margin: 20px 0 20px 0;
 }
 @media screen and (max-width: 1270px) {
-  .titulo_parrafo {
+  .titulo_parrafo, .titulo_parrafo_a {
     width: 100%;
     height: auto;
   }
 }
 
-.conoce_mas {
+.titulo_parrafo_a {
+  width: 50%;
+}
+
+.conoce_mas, .conoce_mas_c {
   background-color: rgba(255, 255, 255, 0);
   font-family: "Alegreya Sans SC", sans-serif;
   font-size: 1.5rem;
   text-transform: lowercase;
   font-weight: 300;
   text-decoration: none;
-  border: 1px solid;
+  border: 1px solid white;
   padding: 7px 17px;
   color: white;
 }
-.conoce_mas:hover {
+.conoce_mas:hover, .conoce_mas_c:hover {
   border: 1px solid #ff6666;
   background-color: #ff6666;
   color: white;
 }
 @media screen and (max-width: 1270px) {
-  .conoce_mas {
+  .conoce_mas, .conoce_mas_c {
     font-size: 3vh;
     padding: 0.7vh 3vh;
     margin: 30px 0 30px 0;
@@ -181,7 +185,7 @@ ul {
 }
 
 .pading_left {
-  padding-left: 4%;
+  padding-left: 10%;
 }
 
 .pading_right {
@@ -265,8 +269,10 @@ h1 {
 header div {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-content: center;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .baner {
@@ -276,18 +282,23 @@ header div {
   background-attachment: fixed;
 }
 
-.contenidos {
+.contenidos, .contenidos_m, .contenidos_s {
   padding: 10% 10% 10% 20%;
   display: flex;
-  height: auto;
-  align-items: center;
-  flex-wrap: wrap;
+  flex-direction: row;
   align-content: space-around;
+  align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  height: auto;
 }
 
-.contenidos15 {
+.contenidos_s {
   flex-direction: row-reverse;
+}
+
+.contenidos_m {
+  padding: 10% 10% 10% 17%;
 }
 
 .cien {
@@ -368,8 +379,11 @@ header div {
   background-color: #1f1f1f;
   padding: 20px 0 20px 6%;
   display: flex;
-  flex-flow: wrap row-reverse;
+  flex-direction: row-reverse;
+  align-content: space-around;
+  align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .marcas a {
   width: 160px;
@@ -402,12 +416,19 @@ header div {
   text-transform: uppercase;
 }
 
-.colash {
+.colash, .colash_swa {
   display: flex;
-  flex-wrap: wrap;
-  width: 50%;
+  flex-direction: row;
+  align-content: space-around;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+.colash_swa {
+  flex-direction: row-reverse;
+  width: 45%;
 }
 
 .fotos {
@@ -423,6 +444,10 @@ header div {
   width: 30%;
 }
 
+.logos_s {
+  width: 30%;
+}
+
 .fotos3 {
   width: 100%;
   border-radius: 5px;
@@ -435,8 +460,11 @@ header div {
 .titulo_mapa {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  align-content: space-around;
   align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 50%;
 }
 @media screen and (max-width: 1270px) {
   .titulo_mapa {
@@ -489,8 +517,12 @@ header div {
 .textos_contact1 {
   border: none;
   display: flex;
-  width: 83%;
+  flex-direction: row;
+  align-content: space-around;
+  align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  width: 83%;
 }
 
 .gird_forms {
@@ -513,13 +545,6 @@ header div {
   padding: 20px;
 }
 
-#send {
-  grid-area: send;
-  font-size: 2rem;
-  padding: 5px 25px 5px 25px;
-  width: auto;
-}
-
 #company label:hover, #company input:hover, #city:hover {
   cursor: pointer;
 }
@@ -528,18 +553,38 @@ header div {
   color: white;
 }
 
+.conoce_mas_c {
+  grid-area: send;
+  font-size: 2rem;
+  padding: 5px 45px 5px 45px;
+}
+@media screen and (max-width: 1270px) {
+  .conoce_mas_c {
+    font-size: 3rem;
+    padding: 5px 20px 5px 20px;
+    text-transform: lowercase;
+    border: white solid 2px;
+  }
+}
+
 footer {
   background-color: #1f1f1f;
   display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  align-items: center;
+  justify-content: space-around;
   flex-wrap: wrap;
   width: 100%;
   height: 90px;
-  align-items: center;
-  justify-content: space-around;
 }
 
 #redes_sociales {
   display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -552,7 +597,10 @@ footer img {
 #copy {
   display: flex;
   flex-direction: column;
+  align-content: space-around;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .iconos_footer2 {
@@ -585,7 +633,7 @@ footer img {
     margin: 0 10px 0 10px;
   }
   /*------------------------------Banners(Responsive)-----------------------------*/
-  .contenidos {
+  .contenidos, .contenidos_s, .contenidos_m {
     padding: 10% 5%;
     margin: 0%;
     height: auto;
@@ -629,7 +677,7 @@ footer img {
     margin-top: 70px;
     margin-bottom: 70px;
   }
-  .colash {
+  .colash, .colash_swa {
     justify-content: space-around;
   }
   .pading_left, .pading_right {

@@ -1,15 +1,11 @@
 footer{
-    background-color: $negro;
-    display: flex;
-    flex-wrap: wrap;
+    background-color: map-get($map:$colors, $key: 'main');
+    @include flex(row, space-around, space-around, center, wrap);
     width: 100%;
     height: 90px;
-    align-items: center;
-    justify-content: space-around;
 }
 #redes_sociales{
-    display: flex;
-    flex-wrap: wrap;
+    @include flex(row, space-around, space-between, center, wrap);
 }
 footer img{
     width: 45px;
@@ -17,9 +13,7 @@ footer img{
     margin: 0px 9px 0 9px;
 }
 #copy{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex(column, space-around, center, center, wrap);
 }
 .iconos_footer2{
     width: 30px;

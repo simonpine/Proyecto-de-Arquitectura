@@ -1,15 +1,10 @@
 .centro{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    @include flex(row, center, center, center, wrap);}
 .bg-black{
-    background-color: $negro;
+    background-color:map-get($map:$colors, $key: 'main');
 }
 .titulo_parrafo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex(column, center, center, center, wrap);
     width:45%;
     margin: 20px 0 20px 0;
     @media screen and (max-width: 1270px){
@@ -17,20 +12,24 @@
     height: auto;
     }
 }
+.titulo_parrafo_a{
+    @extend .titulo_parrafo;
+    width: 50%;
+}
 .conoce_mas{
-    background-color: $transparent;
+    background-color: map-get($map:$colors, $key: 't');
     font-family: $secundaryFont;
     font-size: $small;
     text-transform: $lower;
     font-weight: $thin;
     text-decoration:none;
-    border: 1px solid;
+    border: 1px solid map-get($map:$colors, $key: 'secu');
     padding: 7px 17px;
-    color: $blanco;
+    color: map-get($map:$colors, $key: 'secu');
     &:hover{
-        border: 1px solid $salmon;
-        background-color: $salmon;
-        color: $blanco;
+        border: 1px solid map-get($map:$colors, $key: 'deta');
+        background-color: map-get($map:$colors, $key: 'deta');
+        color: map-get($map:$colors, $key: 'secu');
     }
     @media screen and (max-width: 1270px){
         font-size: 3vh;
@@ -39,13 +38,13 @@
     }
 }
 .pading_left{
-    padding-left: 4%;
+    padding-left: 10%;
 }
 .pading_right{
     padding-right: 10%;
 }
 .salmon{
-    background-color: $salmon;
+    background-color:map-get($map:$colors, $key: 'deta');
 }
 .margin_top{
     margin-top: 20px;
