@@ -1,9 +1,13 @@
 .titulo_mapa{
     @include flex(column, space-around, space-between, center, wrap);
     width: 50%;
+    min-height: 604.06px;
     @media screen and (max-width: 1270px){
         width: 100%;
     }
+}
+.titulos_a{
+    @extend .titulos;
 }
 .mapa{
     width: 90%;

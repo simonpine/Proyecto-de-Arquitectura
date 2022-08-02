@@ -1,7 +1,7 @@
 {
-  "name": "web_arquitectos",
+  "name": "arquitectos_asociados",
   "version": "1.0.0",
-  "description": "Pagina web creada para aquitectos asociados",
+  "description": "Pagina web creada para aquitectos asociados en la cual se puede apreciar quienes son, sus proyectos principales, como cintactarlo y que los caracteriza",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
