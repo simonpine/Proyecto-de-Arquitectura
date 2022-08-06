@@ -99,6 +99,11 @@ nav {
   top: 43%;
   left: -14%;
 }
+@media screen and (min-width: 2226px) {
+  nav {
+    left: -12%;
+  }
+}
 
 ul {
   width: 100%;
