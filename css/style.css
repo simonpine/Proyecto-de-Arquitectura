@@ -166,8 +166,11 @@ ul {
 }
 
 .conoce_mas, .conoce_mas_c {
-  background-color: rgba(255, 255, 255, 0);
   font-family: "Alegreya Sans SC", sans-serif;
+  background: linear-gradient(#ff6666, #ff6666);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
   font-size: 1.5rem;
   text-transform: lowercase;
   font-weight: 300;
@@ -175,11 +178,13 @@ ul {
   border: 1px solid white;
   padding: 7px 17px;
   color: white;
+  transition: background-size 0.3s ease;
 }
 .conoce_mas:hover, .conoce_mas_c:hover {
   border: 1px solid #ff6666;
-  background-color: #ff6666;
   color: white;
+  background-size: 100% 100%;
+  background-position: 100% 0%;
 }
 @media screen and (max-width: 1270px) {
   .conoce_mas, .conoce_mas_c {
